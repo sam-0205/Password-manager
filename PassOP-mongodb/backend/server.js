@@ -22,7 +22,7 @@ app.get('/', async (req, res) => {
   const db = client.db(dbName);
   const collection = db.collection('passwords');
   const fr=await collection.find({}).toArray();
-  // res.send("lauda")
+  // res.send("hello")
   res.json(fr);
 
 })
